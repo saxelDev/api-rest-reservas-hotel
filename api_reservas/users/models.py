@@ -15,7 +15,7 @@ class Perfil(models.Model):
     dni = models.CharField(max_length=50)
     telefono = models.CharField(max_length=50)
     direccion = models.CharField(max_length=100)
-    rol = models.CharField(max_length=20, choices=ROLES, default=ROLES["cliente"])
+    rol = models.CharField(max_length=20, choices=ROLES)
 
     class Meta:
         #nombre de la tabla en la base de datos
